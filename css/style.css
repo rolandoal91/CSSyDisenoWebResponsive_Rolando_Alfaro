@@ -1,0 +1,304 @@
+*{
+	
+	margin: 0;
+	padding: 0;
+	font-family: 'Dancing Script', cursive;
+	
+}
+body{
+	background-color: #02010a;
+
+}
+
+#contenido{
+	width: 900px;
+	margin: 0 auto;
+
+}
+
+.animado{
+	animation: menuanimado 1s;
+}
+@-webkit-keyframes menuanimado{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+
+	}
+	100%{
+		margin-top: 0%;
+
+	}
+}
+
+
+
+
+.bloqueinicio{
+	display: flex;
+	flex-flow: row ;
+	color: white;
+	background-color:  #5b7989;
+	border-radius: 10px 10px 0 0;
+}
+div [class*="bloquemenu"]{
+	flex: 1 2 50%;
+}
+.bloquemenu1{
+	order: 1;
+	text-shadow: 2px 2px #02010a;
+	padding:30px 0 0 10px;
+}
+.bloquemenu2{
+	order: 2;
+	padding: 0 10px 0 5px;
+	display: inline-block;
+	text-align: right;
+
+}
+
+
+.listamenu {
+	margin: 0; 
+	padding:30px 0 0 10px;
+	list-style: outside disc;
+	display: inline-block;
+	text-align: right;
+
+}
+
+
+a{
+	color: white;
+
+}
+.act a:link  {
+	text-decoration: none;
+}
+.centro{
+
+	padding: 0;  
+	background-color:#82c3a6; 
+}
+.imgprimaria{
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+}
+
+.imgsombra{
+	box-shadow: 2px 2px #02010a;
+}
+
+div [class*="bloque"]{
+	flex: 1 2 50%;
+}
+
+.bloque1{
+	order: 1;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.bloque2{
+	order: 2;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.bloquecontenedor{
+	display: flex;
+	flex-flow: row wrap;
+	background-color:  #d5c75f;
+	border: 1px;
+}
+.imgleft{
+	transition: 0.5s ease;
+}
+.imgright{
+	transition: 0.5s ease;
+}
+.imgleft:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px #82c3a6;
+	border: 2px;
+}
+.imgright:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px #82c3a6;
+	border: 2px;
+}
+.piepagina{
+	border-radius: 0 0 10px 10px ;
+	background-color: #C6d5c5;
+	height: 150px;
+}
+
+.bloquepiepagina{
+	display: flex;
+	flex-flow: row ;
+	background-color:  #C6d5c5;
+	margin-bottom: 30px;
+	padding: 10px;
+}
+div [class*="bloquepie"]{
+	flex: 1 2 3 4 20%;
+}
+.bloquepie1{
+	order: 1;
+	padding-top: 20px;
+}
+
+.bloquepie2{
+	order: 2;
+	padding-top: 20px;
+}
+.bloquepie3{
+	order: 3;
+	padding-top: 20px;
+}
+.bloquepie4{
+	order: 4;
+	padding-top: 20px;
+}
+.logo{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.bloquecontenedorpaisaje{
+	display: flex;
+	flex-flow: row ;
+	background-color:  #d5c75f;
+	border: 1px;
+}
+div [class*="bloquepaisaje"]{
+	flex: 1 2 3  33%;
+	padding: 10px;
+	margin: 10px;
+}
+.bloquepaisaje1{
+	order: 1;
+	padding: 20px;
+
+}
+
+.bloquepaisaje2{
+	order: 2;
+	padding: 20px;
+
+}
+.bloquepaisaje3{
+	order: 3;
+	padding: 20px;
+
+}
+.img1{
+	-webkit-filter:blur(10px);
+	filter: (10px);
+
+}
+.img2{
+	padding-top: 40px;
+	-webkit-filter:grayscale(90%);
+	filter: (90%);
+
+
+}
+.img3{
+	-webkit-filter:sepia(100%);
+	filter: (100%);
+}
+.img4{
+	padding-top: 40px;
+	-webkit-filter:grayscale(100%);
+	filter: (100%);
+}
+
+.img6{
+	padding-top: 40px;
+	-webkit-filter:grayscale(100%);
+	filter: (100%);
+}
+/*Media Querie*/
+
+@media only screen and (max-width:900px){
+	div [class*="bloquemenu"]{
+		flex: 1 100%;
+	}
+	.bloqueinicio{
+		display: flex;
+		flex-flow: row wrap;
+		color: white;
+	}
+	.bloquemenu1{
+		order: 1;
+		text-shadow: 2px 2px #02010a;
+		padding:30px 0 0 10px;
+		text-align: center;
+
+	}
+	.bloquemenu2{
+		order: 2;
+		padding-bottom: 10px;
+		display: inline-block;
+		text-align: center;
+
+	}
+
+
+	#contenido{
+		width: 100%;
+		margin: 0 auto;
+
+	}
+
+
+
+	div [class*="bloque"]{
+		flex: 1 100%;
+	}
+
+	.bloque1{
+		order: 1;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+
+	.bloque2{
+		order: 2;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+	.bloquecontenedor{
+		display: flex;
+		flex-flow: row wrap;
+		background-color:  #d5c75f;
+		border: 1px;
+	}
+	.piepagina{
+		border-radius: 0 0 10px 10px ;
+		background-color: #C6d5c5;
+		height: auto;
+		text-align: center;
+	}
+	.bloquepiepagina{
+		display: flex;
+		flex-flow: row wrap;
+		background-color:  #C6d5c5;
+		margin-bottom: 30px;
+		padding: 10px;
+	}
+	.bloquecontenedorpaisaje{
+	display: flex;
+	flex-flow: row wrap;
+	background-color:  #d5c75f;
+	border: 1px;
+}
+div [class*="bloquepaisaje"]{
+	flex: 1 100%;
+	padding: 10px;
+	margin: 10px;
+}
+
+} 
